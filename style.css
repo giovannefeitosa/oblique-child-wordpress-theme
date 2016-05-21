@@ -17,10 +17,17 @@ Version: 1.0
 .page-header-content {
 	margin: 0;
 	background-color: #17191B;
+    color: #aaa;
 	border: 0;
 	padding: 30px;
 	margin-top: -1px;
     font-size: 18px;
+}
+.page-header-video {
+    width: 100%;
+    max-width: 560px;
+    float: right;
+    margin-left: 30px;
 }
 
 
@@ -49,3 +56,5 @@ Version: 1.0
     color: #ddd;
     margin: 20px 0 50px 0;
 }
+
+
