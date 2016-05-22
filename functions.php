@@ -1,6 +1,5 @@
 <?php
 
-if ( ! function_exists( 'oblique_child_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and categories.
  */
@@ -37,6 +36,8 @@ function oblique_child_posted_on() {
 		}		
 	}
 }
-endif;
 
-
+/**
+ * Allow some tags on excerpts
+ */
+require_once get_stylesheet_directory() . '/inc/excerpts.php';
