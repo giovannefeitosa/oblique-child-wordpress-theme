@@ -38,6 +38,21 @@ function oblique_child_posted_on() {
 }
 
 /**
+ * Footer credits for oblique child
+ */
+function oblique_child_footer_credits() {
+	echo '<a href="' . esc_url( __( 'http://wordpress.org/', 'oblique' ) ) . '" rel="nofollow">';
+		printf( __( 'Proudly powered by %s', 'oblique' ), 'WordPress' );
+	echo '</a>';
+	echo '<span class="sep"> | </span>';
+	printf( __( 'Theme: %2$s by %1$s.', 'oblique' ),
+       '<a href="http://www.ProjetoSHAKE.com.br" target="_blank" rel="nofollow">SHAKE</a>',
+       '<a href="https://github.com/shakegioh/oblique-child-wordpress-theme" target="_blank" rel="nofollow">Oblique Child</a>' 
+    );
+}
+add_action( 'oblique_child_footer', 'oblique_child_footer_credits' );
+
+/**
  * Allow some tags on excerpts
  */
 require_once get_stylesheet_directory() . '/inc/excerpts.php';
