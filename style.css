@@ -60,3 +60,7 @@ Version: 1.0
 .grid-layout .entry-content .fluid-width-video-wrapper {
     margin: 15px auto;
 }
+
+.post.category-diversos .post-inner {
+    background-color: #ffd;
+}
