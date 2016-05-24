@@ -25,7 +25,7 @@ function new_wp_trim_excerpt($text)
          * to show in the excerpt too, maybe I will remove <iframe> from
          * here and add post custom field to add video right after the post content
          */
-        $text = strip_tags($text, '<a><iframe>');
+        $text = strip_tags($text, '<a><iframe><p><br><strong>');
         $excerpt_length = apply_filters('excerpt_length', 55);
         $excerpt_length = 155;
 
