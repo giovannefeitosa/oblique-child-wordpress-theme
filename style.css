@@ -64,3 +64,7 @@ Version: 1.0
 .post.category-diversos .post-inner {
     background-color: #ffd;
 }
+
+.social-navigation li a[href*="github.com"]::before {
+    content: "\f09b";
+}
