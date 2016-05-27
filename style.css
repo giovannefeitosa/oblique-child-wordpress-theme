@@ -68,3 +68,6 @@ Version: 1.0
 .social-navigation li a[href*="github.com"]::before {
     content: "\f09b";
 }
+.grid-layout {
+    margin:auto;
+}
