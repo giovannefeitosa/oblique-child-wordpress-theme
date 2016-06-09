@@ -73,7 +73,7 @@ Version: 1.0
 }
 
 /**
- * Side Menu
+ * Transparent side menu
  */
 #secondary {
     background: rgba(0,0,0,.7);
@@ -82,3 +82,19 @@ Version: 1.0
     border-bottom-style: dotted;
 }
 
+/**
+ * Dark search field in side menu
+ */
+#secondary .widget_search label {
+    width: 100%;
+}
+#secondary .search-field {
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #666;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
