@@ -71,3 +71,14 @@ Version: 1.0
 .grid-layout {
     margin:auto;
 }
+
+/**
+ * Side Menu
+ */
+#secondary {
+    background: rgba(0,0,0,.7);
+}
+.slicknav_nav li {
+    border-bottom-style: dotted;
+}
+
