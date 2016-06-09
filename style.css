@@ -98,3 +98,11 @@ Version: 1.0
     width: 100%;
     box-sizing: border-box;
 }
+
+/**
+ * Inline search field in header
+ */
+.social-navigation {
+    float: right;
+    margin-left: 2em;
+}
