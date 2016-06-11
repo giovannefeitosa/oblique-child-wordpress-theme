@@ -54,22 +54,21 @@ function oblique_child_footer_credits()
 }
 add_action('oblique_child_footer', 'oblique_child_footer_credits');
 
+
 /**
- * Remove old masonry init.
+ * Remove old masonry init
  */
-function oblique_child_print_scripts()
-{
-    wp_dequeue_script('oblique-masonry-init');
+function oblique_child_print_scripts() {
+    wp_dequeue_script( 'oblique-masonry-init' );
 }
 /**
- * Add new masonry init.
+ * Add new masonry init
  */
-function oblique_child_scripts()
-{
-    wp_enqueue_script('oblique-child-masonry-init', get_stylesheet_directory_uri().'/js/masonry-init.js', ['jquery-masonry'], true);
+function oblique_child_scripts() {
+    wp_enqueue_script( 'oblique-child-masonry-init', get_stylesheet_directory_uri() . '/js/masonry-init.js', array('jquery-masonry'), true );
 }
-add_action('wp_print_scripts', 'oblique_child_print_scripts');
-add_action('wp_enqueue_scripts', 'oblique_child_scripts');
+add_action( 'wp_print_scripts', 'oblique_child_print_scripts' );
+add_action( 'wp_enqueue_scripts', 'oblique_child_scripts' );
 
 /**
  * Allow some tags on excerpts.

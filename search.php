@@ -2,7 +2,6 @@
 /**
  * The template for displaying search results pages.
  */
-$header_last_date = null;
 
 get_header(); ?>
 
@@ -21,15 +20,6 @@ get_header(); ?>
                 <?php while (have_posts()) : the_post(); ?>
 
                     <?php
-                        $current_post_date = get_post_time('Y-m-d');
-
-                        if ($current_post_date !== $header_last_date) {
-                            echo '</div>';
-                            $header_last_date = $current_post_date;
-                            get_template_part('contentheader', get_post_format());
-                            echo '<div class="grid-layout">';
-                        }
-
                         /*
                          * Run the loop for the search to output the results.
                          * If you want to overload this in a child theme then include a file

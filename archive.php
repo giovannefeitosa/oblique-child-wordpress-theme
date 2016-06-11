@@ -4,7 +4,6 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  */
-$header_last_date = null;
 
 get_header(); ?>
 
@@ -31,15 +30,6 @@ get_header(); ?>
                     <?php while (have_posts()) : the_post(); ?>
 
                         <?php
-                            $current_post_date = get_post_time('Y-m-d');
-
-                            if ($current_post_date !== $header_last_date) {
-                                echo '</div>';
-                                $header_last_date = $current_post_date;
-                                get_template_part('contentheader', get_post_format());
-                                echo '<div class="grid-layout">';
-                            }
-
                             /* Include the Post-Format-specific template for the content.
                              * If you want to override this in a child theme, then include a file
                              * called content-___.php (where ___ is the Post Format name) and that will be used instead.
